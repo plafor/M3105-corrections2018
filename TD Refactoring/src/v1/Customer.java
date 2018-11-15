@@ -1,20 +1,34 @@
 package v1;
 
 import java.util.ArrayList;
-import java.util.Enumeration;
+
 import java.util.Iterator;
 import java.util.List;
-import java.util.Vector;
 
+/**
+ * This class ...
+ * @author plafor
+ *
+ */
 public class Customer {
 
+	/**
+	 * the name of the customer
+	 */
 	private String name;
-	private List<Rental> rentals = new ArrayList<Rental>();
+	/**
+	 * rentals represent ...
+	 */
+	private List<Rental> rentals = new ArrayList<>();
 
 	public Customer(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * add the rental argument in the rentals list
+	 * @param aRental: the renatl to add
+	 */
 	public void addRental(Rental aRental) {
 		rentals.add(aRental);
 	}
